@@ -4,10 +4,13 @@
     {{-- <input wire:model.lazy="name" type="text"> --}}
     <input wire:model="name" type="text">
     <input wire:model="loud" type="checkbox">
-    <select wire:model="gretings">
-        <option value="">Hello</option>
-        <option value="">Goodbye</option>
-        <option value="">Adios</option>
+    <select wire:model="greetings">
+        <option>Hello</option>
+        <option >Goodbye</option>
+        <option>Adios</option>
     </select>
-    {{$gretings}} {{$name}} @if ($loud) !! @endif
+
+    {{$greetings}}
+
+     {{$name}} @if ($loud) !! @endif
 </div>

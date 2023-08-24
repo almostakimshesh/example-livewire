@@ -8,7 +8,7 @@ class HelloWorld extends Component
 {
     public $name = '';
     public $loud = false;
-    public $gretings = [];
+    public $greetings = '';
 
     public function render()
     {
